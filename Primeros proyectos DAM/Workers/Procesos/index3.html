@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var trabajador = new Worker("tarea.js");
+            trabajador.postMessage("hola")
+            
+            trabajador.onmessage = function(datos){
+                console.log("el trabajador ha dicho algo:")
+                console.log(datos.data)
+            }
+        </script>
+    
+    </body>
+
+</html>

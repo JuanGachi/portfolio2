@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{text-align:center;}
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=2048 height=2048></canvas> 
+        <script>
+            var contexto =
+            document.getElementById("lienzo").getContext("2d")  // Cargamos el contexto de la imgaen en una                                                             variable.
+            
+            var foto = new Image();                         // Creamos un nuevo objeto de tipo imagen.
+            foto.src = "nelo1.jpg"                           // le indicamos cual es el archivo informatico                                                     correspondiente a la imagen
+            
+            setTimeout(function(){                             //ejecuta una funcion con cierto retraso para                                                        darle tiempo al programa a cargar la imagen
+                const tiempoInicio = Date.now()                 // calculo el tiempo de inicio y lo pongo en una varible
+                contexto.drawImage(foto,0,0)                    //dibujo la imagen en el lienzo.
+                
+                var pixeles = contexto.getImageData(0,0,2048,2048)  //atrapó todos los datos de la imagen en                                                        una matriz.
+                
+                for(var i = 0;i<pixeles.data.length;i+=4){          //recorro esa imagen cada cuatro bloques                                                        porque cuatro piezas de contendio                                                               representa un pixel
+                    pixeles.data[i] = 255-pixeles.data[i];          // invierto el canal rojo de la imagen
+                    pixeles.data[i+1] = 255-pixeles.data[i+1];      // invierto en el canal verde de la imagen.
+                    pixeles.data[i+2] = 255-pixeles.data[i+2];      // invierto el canl azul de la imagen.
+                }
+                
+                contexto.putImageData(pixeles,0,0);                  // por ultimo ponemos la imagen de vuelta detntro del lienzo
+                const tiempoFinal = Date.now()                      //calculo el tiempo de finalizacion y lo pongo en otra variable.
+                 console.log("el tiempo requerido para calcular este programa ha sido de "+(tiempoFinal-tiempoInicio)) //muestro por pantalla la diferencia entre los tiempos de inicio y los tiempo de finalizacion.
+            },2000)
+        </script>
+    
+    
+    
+    
+    </body>
+</html>

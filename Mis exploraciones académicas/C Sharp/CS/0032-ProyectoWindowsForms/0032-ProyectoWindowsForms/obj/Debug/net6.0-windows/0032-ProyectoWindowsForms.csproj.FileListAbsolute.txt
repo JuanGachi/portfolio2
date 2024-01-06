@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\bin\Debug\net6.0-windows\0032-ProyectoWindowsForms.exe
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\bin\Debug\net6.0-windows\0032-ProyectoWindowsForms.deps.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\bin\Debug\net6.0-windows\0032-ProyectoWindowsForms.runtimeconfig.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\bin\Debug\net6.0-windows\0032-ProyectoWindowsForms.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\bin\Debug\net6.0-windows\0032-ProyectoWindowsForms.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\_0032_ProyectoWindowsForms.Form1.resources
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.AssemblyInfo.cs
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\refint\0032-ProyectoWindowsForms.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\0032-ProyectoWindowsForms.genruntimeconfig.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0032-ProyectoWindowsForms\0032-ProyectoWindowsForms\obj\Debug\net6.0-windows\ref\0032-ProyectoWindowsForms.dll

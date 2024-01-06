@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\bin\Debug\net6.0-windows\0031-ProyectoForms3.exe
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\bin\Debug\net6.0-windows\0031-ProyectoForms3.deps.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\bin\Debug\net6.0-windows\0031-ProyectoForms3.runtimeconfig.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\bin\Debug\net6.0-windows\0031-ProyectoForms3.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\bin\Debug\net6.0-windows\0031-ProyectoForms3.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\_0031_ProyectoForms3.Form1.resources
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.AssemblyInfo.cs
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\refint\0031-ProyectoForms3.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\0031-ProyectoForms3.genruntimeconfig.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\0031-ProyectoForms3\0031-ProyectoForms3\obj\Debug\net6.0-windows\ref\0031-ProyectoForms3.dll

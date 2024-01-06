@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\bin\Debug\net6.0\Proyecto0020.exe
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\bin\Debug\net6.0\Proyecto0020.deps.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\bin\Debug\net6.0\Proyecto0020.runtimeconfig.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\bin\Debug\net6.0\Proyecto0020.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\bin\Debug\net6.0\Proyecto0020.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.AssemblyInfo.cs
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\refint\Proyecto0020.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\Proyecto0020.genruntimeconfig.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0020\Proyecto0020\obj\Debug\net6.0\ref\Proyecto0020.dll

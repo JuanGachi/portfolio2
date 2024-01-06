@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\bin\Debug\net6.0-windows\Proyecto0030.exe
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\bin\Debug\net6.0-windows\Proyecto0030.deps.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\bin\Debug\net6.0-windows\Proyecto0030.runtimeconfig.json
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\bin\Debug\net6.0-windows\Proyecto0030.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\bin\Debug\net6.0-windows\Proyecto0030.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.Form1.resources
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.AssemblyInfo.cs
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\refint\Proyecto0030.dll
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.pdb
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\Proyecto0030.genruntimeconfig.cache
+C:\Users\PC\Desktop\DAM\DAM 2ºTrimestre\Programacion\CS\Proyecto0030\Proyecto0030\obj\Debug\net6.0-windows\ref\Proyecto0030.dll
