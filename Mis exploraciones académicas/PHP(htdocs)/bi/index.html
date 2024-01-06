@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="codigo.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+        <link rel="sidebar" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="formulario">
+                <h3>1.-Seleccion de las tablas</h3>
+            <div id="selecciontabla">
+                
+                <p>En primer lugar seleccionamos la tabla principal sobre la cual queremos operar</p>
+                <select id="seleccionatabla">
+                    <option>Selecciona una tabla</option>
+                </select>
+            </div>
+                <h3>2.-Selecciona los campos que quieres ver en el informe</h3>
+            <div id="seleccioncampos">
+                
+                <p>Seleccionamos los campos que queremos que intervengan en nuestro informe</p>
+                <div id="seleccionacampos">
+                </div>      
+            </div>
+                <h3>3.-Selecciona los campos en base a los cuales ordenar</h3>
+                 <div id="seleccionordenar">
+                
+                <p>Seleccionamos los campos que queremos que intervengan en nuestro informe</p>
+                <div id="seleccionaordenar">
+                </div>      
+            </div>
+                <h3>4.-Seleccion de los alias por campos</h3>
+              <div id="seleccionalias">
+                
+                <p>Seleccionamos los nombres de columna que queramos que aparezcan (opcional)</p>
+                <table id="seleccionaalias" colpadding = 0 colspacing = 0 cellpadding = 0 cellspacing= 0  width=100%>
+                  </table> 
+            </div>
+                <h3>5.-Seleccion de las condiciones</h3>
+              <div id="seleccioncondiciones">
+                  
+                <p>Introducimos condiciones para los campos que hemos seleccionado</p>
+                <table id="seleccionacondiciones" colpadding = 0 colspacing = 0 cellpadding = 0 cellspacing= 0  width=100%>
+                
+                  </table> 
+                     <h3>6.-Seleccion del limite</h3>
+                </div>
+                <h3>6.-Seleccion del limite</h3>
+                <div id="seleccionlimite">
+                
+                <p>Podemos limitar la cantidad de registros que nos proporcionan el informe</p>
+                <div id="seleccionalimite">
+                    <input type="number" id="limite">
+                </div> 
+            </div>
+            </div>
+            <div id="resulados">
+            <div id="sql"></div>
+            <div id="resultadostabla"></div>
+            <div id="resultadosgrafica"></div>
+            </div>
+        </div>
+    </body>
+</html>

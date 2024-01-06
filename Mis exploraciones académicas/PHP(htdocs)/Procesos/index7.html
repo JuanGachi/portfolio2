@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            body{text-align:center;}
+            #contienecanvas{width:2048px;height: 2048px;position:relative;}
+            #contienecanvas canvas{position:absolute;top:0px;left:0px;}
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=2048 height=2048></canvas> 
+        <div id="contienecanvas">
+        <canvas id="lienzodestino" width=2048 height=2048></canvas>
+        <canvas id="lienzobuckets" width=2048 height=2048></canvas>
+        </div>
+         
+        <script>
+            
+            var anchura = 1;// esta variable va almacenar la anchura del cuadrado de comparacion
+            var umbral = 10;
+            var anchurabucket = 512;
+            var anchura = 2048;
+            var altura = 2048;
+            var x = 0;
+            var y = 0;
+            var contexto = document.getElementById("lienzo").getContext("2d")  // Cargamos el contexto de la imgaen en una variable.
+             var contextodestino = document.getElementById("lienzodestino").getContext("2d")
+             var contextobuckets = document.getElementById("lienzobuckets").getContext("2d")
+             var temporizador;
+            
+            var foto = new Image();                         // Creamos un nuevo objeto de tipo imagen.
+            foto.src = "nelo1.jpg"                           // le indicamos cual es el archivo informatico                                                     correspondiente a la imagen
+            var trabajador = new Array();
+           
+            setTimeout(function(){    //ejecuta una funcion con cierto retraso para                                             
+                const tiempoInicio = Date.now(); //calculo el tiempo de inicio y lo pongo en una variable   
+                contexto.drawImage(foto,0,0) // dibujo la imagen en el lienzo
+                
+
+                numerotrabajadores = navigator.hardwareConcurrency*8;
+                for(var i = 0;i<numerotrabajadores;i++){
+                    trabajador[i] = new Worker("tarea7.js");
+                    //trabajador[i].postMessage("comienza");
+                    
+                    trabajador[i].onmessage = function(datos){
+                            console.log(datos)
+                            contextodestino.putImageData(datos.data.resultado,datos.data.mix,datos.data.miy);
+                            x+=anchurabucket;
+                            if(x > 2048){x=0;y+=anchurabucket;}
+                            if(y < 2048){
+                                console.log("voy a lanzar con: "+i+"-"+x+"-"+y)
+                               bucle(datos.data.miidworker,x,y)
+                  }else{
+                      const tiempoFinal = Date.now()
+                       console.log("el tiempo requerido para calcular este programa ha sido de "+(tiempoFinal-tiempoInicio))
+                  }
+                }
+                    bucle(i,x,y)
+                }
+                
+                const tiempoFinal = Date.now()                      //calculo el tiempo de finalizacion y lo pongo en otra variable.
+                 console.log("el tiempo requerido para calcular este programa ha sido de "+(tiempoFinal-tiempoInicio)); //muestro por pantalla la diferencia entre los tiempos de inicio y los tiempo de finalizacion.
+            },2000)
+            
+            function bucle(i,x,y){
+                var indice = i
+                
+                contextobuckets.fillRect(x,y,anchurabucket,anchurabucket)
+                contextobuckets.clearRect(x+2,y+2,anchurabucket-4,anchurabucket-4)
+                console.log("en el bucle devuelvo"+i+"-"+x+"-"+y)
+                
+                
+                var pixeles = contexto.getImageData(x,y,anchurabucket,anchurabucket); //Meto toda la infromacion de los pixeles en una variables.                                                                                 
+                var pixelesdestino = contextodestino.getImageData(0,0,anchurabucket,anchurabucket) //recorro los pixeles uno a uno.
+                json = {px:pixeles,pxdst:pixelesdestino,mix:x,miy:y,miumbral:umbral,mianchurabucket:anchurabucket,idworker:i}
+                console.log("el indice del trabajador es: "+indice)
+                trabajador[indice].postMessage(json)
+               
+                
+                 
+                //clearTimeout(temporizador);
+                
+                }
+
+            
+        </script>
+    
+    
+    
+    
+    </body>
+</html>

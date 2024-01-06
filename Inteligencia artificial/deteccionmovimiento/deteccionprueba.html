@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Detección de Movimiento</title>
+    <style>
+        html, body { background: black; }
+        video { display: none; }
+        canvas { position: absolute; top: 0; left: 0; }
+        #lienzo2 { opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <canvas id="lienzo" width="640" height="480"></canvas>
+    <canvas id="lienzo2" width="640" height="480"></canvas>
+    <video id="video" autoplay></video>
+
+    <script>
+        const video = document.getElementById("video");
+        const lienzo = document.getElementById("lienzo");
+        const lienzo2 = document.getElementById("lienzo2");
+        const contexto = lienzo.getContext("2d");
+        const contexto2 = lienzo2.getContext("2d");
+        const paso = 16;
+        let pixelesviejos = [];
+        let pixelesnuevos = [];
+        let contador = 0;
+        let areaMovimientoAnterior = 0;
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(flujo => video.srcObject = flujo)
+            .catch(error => console.log("Error: " + error));
+
+        function videoALienzo() {
+            contexto.drawImage(video, 0, 0, 640, 480);
+            pixelesviejos = pixelesnuevos;
+            pixelesnuevos = contexto.getImageData(0, 0, 640, 480).data;
+
+            let areaMovimientoActual = 0;
+
+            if (contador > 0) {
+                for (let i = 0; i < pixelesnuevos.length; i += 4 * paso) {
+                    let diferencia = Math.abs(pixelesnuevos[i] - pixelesviejos[i]) +
+                                    Math.abs(pixelesnuevos[i + 1] - pixelesviejos[i + 1]) +
+                                    Math.abs(pixelesnuevos[i + 2] - pixelesviejos[i + 2]);
+
+                    if (diferencia > 20) {
+                        let x = (i / 4) % 640;
+                        let y = Math.floor((i / 4) / 640);
+                        contexto2.strokeRect(x, y, paso, paso);
+                        areaMovimientoActual++;
+                    }
+                }
+
+                if (areaMovimientoActual > areaMovimientoAnterior * 1.5) {
+                    alert("¡Alerta! Objeto acercándose a la cámara");
+                }
+
+                areaMovimientoAnterior = areaMovimientoActual;
+            }
+
+            contador++;
+            requestAnimationFrame(videoALienzo);
+        }
+
+        video.addEventListener('play', videoALienzo);
+    </script>
+</body>
+</html>

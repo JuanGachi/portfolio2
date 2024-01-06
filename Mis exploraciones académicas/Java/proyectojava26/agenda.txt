@@ -1,0 +1,12 @@
+Juan Jose|Galan|info@juanjosegalan.com|123456
+asdfa|asf|asfd|asdf
+asfdasfdad|asdfasdfa|adfasdf|asdfadsfa
+asdfasdfadf|asfdasdfasfdasfda|asfdasdfadsfa|asdfasdfadsf
+Nombre|Apellidos|Correo|Email
+Nombre|Apellidos|jugach21@gmail.com|telefono
+Nombre|Apellidos|info@jocarsa.com|telefono
+Nombre|Apellidos|email @email.com|telefono
+Juan Jose|Galan Chilet|Jugach21@gmail.com|654987312
+asdfadsf|adsfasdfafd|fasfdasfd|afdsasdf
+Juan jose|galan|jugachalñksjdfas|654654654
+Juan Jose|Galan|jugach21@gmail.com|654654654

@@ -1,0 +1,3 @@
+{"titulo":"Nombre del usuario","descripcion":"Introduce el nombre del usuario que vas a crear","placeholder":"Introduce un nombre de usuario","mascara":"algo","min":"0","deshabilitado":"true","visible":"true","tipodato":"text","icono":"fas fa-user"}
+
+{"titulo":"Contraseña del usuario","descripcion":"Introduce la contraseña del usuario que estas creando","placeholder":"Introduce una contraseña","mascara":"algo","min":"1","deshabilitado":"false","visible":"true","tipodato":"password","icono":"fas fa-key"}
