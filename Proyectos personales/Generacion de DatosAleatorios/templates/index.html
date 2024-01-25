@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BDforyou - Generador de Datos Aleatorios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>BDforyou</h1>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#registrate">Regístrate</a></li>
+                <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+        <form action="/" method="post">
+        <div class="campo">
+            <label for="id">ID:</label>
+            <select name="id" id="id">
+                <option value="null">Null</option>
+                <option value="id" selected>Autoincremental</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <select name="nombre" id="nombre">
+                <option value="null">Null</option>
+                <option value="nombre">Incluir</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="apellido">Apellido:</label>
+            <select name="apellido" id="apellido">
+                <option value="null">Null</option>
+                <option value="apellido">Incluir</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="email">Email:</label>
+            <select name="email" id="email">
+                <option value="null">Null</option>
+                <option value="email">Incluir</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="direccion">Dirección:</label>
+            <select name="direccion" id="direccion">
+                <option value="null">Null</option>
+                <option value="direccion">Incluir</option>
+            </select>
+        </div>
+        <div class="campo">
+            <label for="cantidad">Cantidad de Registros:</label>
+            <select name="cantidad" id="cantidad">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+        
+
+        <div class="campo">
+            <label for="formato">Formato:</label>
+            <select name="formato" id="formato">
+                <option value="JSON">JSON</option>
+                <option value="CSV">CSV</option>
+                <option value="DOCX">DOCX</option>
+                <option value="TXT">TXT</option>
+            </select>
+        </div>
+
+        <button type="submit">Generar y Descargar</button>
+    </form>
+</div>
+    <footer>
+        <p>BDforyou - Tu herramienta para la generación de datos de prueba. Ideal para desarrolladores y analistas de datos.</p>
+    </footer>
+</body>
+</html>
