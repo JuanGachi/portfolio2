@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def detectar_imperfecciones(imagen):
     # Preprocesamiento para resaltar texturas
     imagen_gray = cv2.cvtColor(imagen, cv2.COLOR_BGR2GRAY)
