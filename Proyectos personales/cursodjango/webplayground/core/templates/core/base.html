@@ -30,13 +30,33 @@
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'pages:pages' %}">Páginas</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'profiles:list' %}">Perfiles</a>
+            </li>
             </ul>
             <ul class="navbar-nav">
+              {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link" href="/admin/">
-                  {% if request.user.is_staff %}Admin{% else %}Acceder{% endif %}
-                </a>
+                  <form action="{% url 'logout' %}" method="post">
+                      {% csrf_token %}
+                      <button type="submit" class="nav-link" style="background:none; border:none; padding:0; margin:0; color:white;">Salir</button>
+                  </form>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'profile' %}">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'messenger:list' %}">Mensajes</a>
+          </li>
+          {% else %}
+              
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}">Acceder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'signup' %}">Registro</a>
+            </li>
+          {% endif %}
             </ul>
           </div>
         </div>
