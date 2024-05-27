@@ -1,0 +1,80 @@
+body {
+    background: #090909;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header h3, header p {
+    color: #ffffff;
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Opcional: Si deseas hacer la foto redonda */
+    max-height: 200px; /* Ajusta este valor según sea necesario */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.col-md-4 {
+    flex: 1;
+    min-width: 250px; /* Asegura que las columnas no se vuelvan demasiado pequeñas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-8 {
+    flex: 2;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.card-project {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #00bcd4;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.card-project:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.card-project h2, .card-project p {
+    color: #ffffff;
+}
+
+.card-project a {
+    color: #00bcd4;
+}
+
+.btn-primary {
+    background-color: #00bcd4;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #008ba3;
+}
+

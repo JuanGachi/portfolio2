@@ -2,33 +2,40 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carga los datos utilizando la coma (',') como delimitador
-datos_trafico = pd.read_csv('data-export.csv', sep=',')
+datos_eventos = pd.read_csv('data-exportt.csv', sep=',')
 
 # Imprime los nombres de las columnas para verificar
-print("Nombres de columnas en el DataFrame:", datos_trafico.columns)
+print("Nombres de columnas en el DataFrame:", datos_eventos.columns)
 
 # Análisis básico
 print("Estadísticas básicas:")
-print(datos_trafico.describe())
+print(datos_eventos.describe())
 
-# Análisis por país
-print("\nUsuarios y Sesiones por País:")
-usuarios_pais = datos_trafico.groupby('Pais')['Usuarios'].sum()
-sesiones_pais = datos_trafico.groupby('Pais')['Sesiones con interaccion'].sum()
-print(usuarios_pais)
-print(sesiones_pais)
+# Análisis por 'Nombre del evento'
+print("\nTotal de usuarios y Total de ingresos por Nombre del evento:")
+usuarios_por_evento = datos_eventos.groupby('Nombre del evento')['Total de usuarios'].sum()
+ingresos_por_evento = datos_eventos.groupby('Nombre del evento')['Total de ingresos'].sum()
+print(usuarios_por_evento)
+print(ingresos_por_evento)
 
-# Gráfico de usuarios por país
+# Gráfico de 'Total de usuarios' por 'Nombre del evento'
 try:
     plt.figure(figsize=(12, 6))
-    usuarios_pais.plot(kind='bar')
-    plt.title('Usuarios por País')
-    plt.xlabel('País')
-    plt.ylabel('Número de Usuarios')
+    usuarios_por_evento.plot(kind='bar')
+    plt.title('Total de Usuarios por Nombre del Evento')
+    plt.xlabel('Nombre del Evento')
+    plt.ylabel('Total de Usuarios')
     plt.show()
-
-
 except NameError:
-    print("No se pudo generar el gráfico de páginas más visitadas debido a un error anterior.")
+    print("No se pudo generar el gráfico debido a un error.")
 
-# Añade aquí cualquier análisis adicional que necesites...
+# Gráfico de 'Total de ingresos' por 'Nombre del evento'
+try:
+    plt.figure(figsize=(12, 6))
+    ingresos_por_evento.plot(kind='bar', color='green')
+    plt.title('Total de Ingresos por Nombre del Evento')
+    plt.xlabel('Nombre del Evento')
+    plt.ylabel('Total de Ingresos')
+    plt.show()
+except NameError:
+    print("No se pudo generar el gráfico debido a un error.")
