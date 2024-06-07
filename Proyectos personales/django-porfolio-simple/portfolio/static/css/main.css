@@ -1,0 +1,320 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Ajustar la altura del navbar */
+    padding: 10px 20px; /* Ajustar el padding del navbar */
+    position: relative; /* Necesario para pseudo-elementos */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+.navbar::before, .navbar::after {
+    content: '';
+    position: absolute;
+    background: rgba(106, 17, 203, 0.1);
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.navbar::before {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: -30px;
+}
+
+.navbar::after {
+    width: 150px;
+    height: 150px;
+    bottom: -50px;
+    right: -50px;
+    background: rgba(37, 117, 252, 0.1);
+}
+
+.navbar-brand {
+    display: inline-block;
+    height: 40px; /* Ajustar la altura del logotipo en el navbar */
+    position: relative;
+    z-index: 1; /* Asegurarse de que el logotipo esté por encima de las formas */
+}
+
+.navbar-brand img {
+    height: 100%; /* Asegurar que la imagen ocupe toda la altura del contenedor */
+    border-radius: 50%; /* Redondear la imagen */
+}
+
+.nav-link {
+    color: #000000 !important; /* Letras de los enlaces en negro */
+    font-weight: 500;
+    position: relative;
+    z-index: 1; /* Asegurarse de que los enlaces estén por encima de las formas */
+}
+
+.nav-link:hover {
+    color: #000000 !important; /* Letras de los enlaces al pasar el mouse en negro */
+}
+
+.btn-primary {
+    background-color: #ffffff; /* Fondo blanco para los botones */
+    border-color: #000000; /* Borde negro para los botones */
+    font-weight: 500;
+    color: #000000; /* Letras en negro */
+}
+
+.btn-primary:hover {
+    background-color: #f8f9fa; /* Fondo gris claro para los botones al pasar el mouse */
+    border-color: #000000; /* Borde negro para los botones al pasar el mouse */
+    color: #000000; /* Letras en negro */
+}
+
+.content {
+    padding-top: 80px; /* Asegurarse de que el contenido no esté cubierto por el navbar */
+    position: relative; /* Necesario para pseudo-elementos */
+}
+
+.content::before, .content::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.content::before {
+    width: 200px;
+    height: 200px;
+    top: -100px; /* Ajustar para centrar entre navbar y contenido */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(106, 17, 203, 0.1);
+}
+
+.content::after {
+    width: 150px;
+    height: 150px;
+    top: -120px; /* Ajustar para centrar entre navbar y contenido */
+    left: 60%;
+    transform: translateX(-50%);
+    background: rgba(37, 117, 252, 0.2);
+}
+
+.extra-geom::before, .extra-geom::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.extra-geom::before {
+    width: 100px;
+    height: 100px;
+    top: -140px; /* Ajustar para centrar entre navbar y contenido */
+    left: 40%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 255, 0.3); /* Añadir otro tono de morado */
+}
+
+.extra-geom::after {
+    width: 80px;
+    height: 80px;
+    top: -150px; /* Ajustar para centrar entre navbar y contenido */
+    left: 70%;
+    transform: translateX(-50%);
+    background: rgba(0, 255, 255, 0.3); /* Añadir otro tono de azul claro */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 100%; /* Asegurar que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #6c757d;
+    flex-grow: 1;
+}
+
+.card a.btn {
+    align-self: flex-end;
+    margin-top: auto;
+    background-color: #ffffff; /* Fondo blanco para los botones */
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.card a.btn:hover {
+    background-color: #f8f9fa; /* Fondo gris claro para los botones al pasar el mouse */
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+header {
+    position: relative;
+    padding: 10px 15px; /* Reducido el padding para acercar los elementos a la parte superior */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Fondo gradiente morado y azul */
+    color: #ffffff; /* Letras en blanco */
+    display: flex;
+    align-items: right; /* Centramos verticalmente */
+    justify-content: right; /* Centramos horizontalmente */
+    text-align: right; /* Texto alineado a la izquierda */
+    height: calc(100vh - 100px); /* Reducir la altura del header */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+header::before, header::after {
+    content: '';
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+header::before {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -150px;
+}
+
+header::after {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+}
+
+header .profile-photo {
+    max-width: 300px; /* Tamaño más grande para la imagen */
+    border-radius: 50%;
+    margin-right: 50px; /* Espacio entre la imagen y la descripción */
+    z-index: 2; /* Asegurarse de que la imagen esté por encima de los pseudo-elementos */
+}
+
+header .description {
+    max-width: 600px;
+    z-index: 2; /* Asegurarse de que la descripción esté por encima de los pseudo-elementos */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header h3 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem; /* Reducido el margen inferior para juntar los elementos */
+    color: #ffffff; /* Letras en blanco */
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem; /* Reducido el margen inferior para juntar los elementos */
+}
+
+.header-btn {
+    margin-top: 1rem; /* Margen superior para separar el botón del texto */
+}
+
+.footer {
+    padding: 20px 0;
+    background: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer a {
+    color: #007bff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-icon {
+    margin-bottom: 10px; /* Espacio entre los iconos */
+}
+
+
+.social-icons a:hover {
+    color: #007bff; /* Color al pasar el mouse */
+}
+
+/* Estilos para los div de las publicaciones del blog */
+.blog-post {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2, .blog-post h5 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.blog-post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.blog-post img {
+    border-radius: 8px;
+}

@@ -1,39 +1,31 @@
 {% extends 'layout.html' %}
 
-{% block content %}
 {% load static %}
 
-<header class="row">
-    <div class="col-md-4">
-        <img src="{% static 'portfolio/foto.jpg' %}" alt="Foto" class="profile-photo">
-    </div>
-    <div class="col-md-8">
-        <h1><strong>Juan José Galán Chilet</strong></h1>
-        <h3>Desarrollador de Software</h3>
-        <p>Apasionado desarrollador de software con experiencia en el diseño y desarrollo de aplicaciones web y móviles.
-         Hábil en varios lenguajes de programación y tecnologías como JavaScript, Python, Java, Django, y Node.js.
-         Comprometido con la creación de soluciones eficientes y escalables que satisfagan las necesidades de los usuarios. 
-         Siempre en busca de nuevos desafíos y oportunidades para aprender y crecer en el campo de la tecnología.</p>
-        <a href="{% static 'portfolio/CV1.pdf' %}" class="btn btn-primary btn-lg rounded-0 my-3">Download CV</a>
-    </div>
-</header>
+{% block content %}
+<div class="container-fluid mt-2 pt-0 extra-geom mx-auto">
+    <header class="mt-5 text-center" style="display: flex; align-items: flex-start; justify-content: center;">
+        <!-- Incluir el SVG del personaje desde la carpeta estática -->
+        <object type="image/svg+xml" data="{% static 'images/character.svg' %}" id="character" class="profile-photo" style="max-width: 300px; margin-right: 50px;"></object>
+        
+        <div class="description" style="max-width: 600px; margin-left: 50px;">
+            <h1 class="display-4"><strong>Juan José</strong></h1>
+            <h3 class="text-muted">Desarrollador de Software</h3>
+            <p class="lead text-left" style="max-width: 500px;">Apasionado desarrollador de software con experiencia en el diseño y desarrollo de aplicaciones web y móviles. Hábil en varios lenguajes de programación y tecnologías como JavaScript, Python, Java, Django, y Node.js. Comprometido con la creación de soluciones eficientes y escalables que satisfagan las necesidades de los usuarios. Siempre en busca de nuevos desafíos y oportunidades para aprender y crecer en el campo de la tecnología.</p>
+            
 
-<div class="row my-4 text-center">
-    <h3>Mis Proyectos</h3>
-    <p>Aquí presento algunos de los proyectos que he desarrollado. En el blog estaré subiendo todos mis nuevos proyectos.</p>
-    {% for project in projects %}
-    <div class="col-md-4 p-4">
-        <div class="card bg-black card-project">
-            <img src="{{project.image.url}}" alt="{{project.title}}" class="card-img-top" />
-            <div class="card-body">
-                <h2>{{project.title}}</h2> <p>{{project.description}}</p>
-                {% if project.url %}
-                <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm" target="_blank">{{project.url}}</a>
-                {% endif %}
+            <!-- Iconos de redes sociales -->
+            <div class="social-icons mt-3">
+                <a href="https://www.linkedin.com/in/juan-jos%C3%A9-gal%C3%A1n-chilet/" target="_blank" class="social-icon">
+                    <img src="{% static 'images/linkedin.png' %}" alt="LinkedIn" style="max-width: 30px;">
+                </a>
+                <a href="https://github.com/JuanGachi" target="_blank" class="social-icon">
+                    <img src="{% static 'images/github.png' %}" alt="GitHub" style="max-width: 30px;">
+                </a>
+              
             </div>
         </div>
-    </div>
-    {% endfor %}
-
+    </header>
+</div>
 
 {% endblock %}
