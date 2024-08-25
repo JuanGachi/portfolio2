@@ -1,0 +1,14 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Inicio Taller{% endblock %}
+
+{% block content %}
+<h1>Bienvenido al Taller</h1>
+<p>Desde aquí puedes gestionar los montajes y recursos.</p>
+<ul>
+    <li><a href="{% url 'lista_montajes' %}">Ver Montajes</a></li>
+    <li><a href="{% url 'agregar_montaje' %}">Agregar Montaje</a></li>
+    <li><a href="{% url 'lista_recursos' %}">Ver Recursos</a></li>
+    <li><a href="{% url 'agregar_recurso' %}">Agregar Recurso</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Lista de Montajes{% endblock %}
+
+{% block content %}
+<h1>Lista de Montajes</h1>
+<ul>
+    {% for montaje in montajes %}
+        <li>{{ montaje.nombre }} - {{ montaje.fecha_inicio }} a {{ montaje.fecha_fin }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'agregar_montaje' %}">Agregar Montaje</a>
+{% endblock %}

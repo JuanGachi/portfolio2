@@ -1,0 +1,13 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Lista de Vehículos{% endblock %}
+
+{% block content %}
+<h1>Lista de Vehículos</h1>
+<ul>
+    {% for vehiculo in vehiculos %}
+        <li>{{ vehiculo.marca }} {{ vehiculo.modelo }} - {{ vehiculo.matricula }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'agregar_vehiculo' %}">Agregar Vehículo</a>
+{% endblock %}

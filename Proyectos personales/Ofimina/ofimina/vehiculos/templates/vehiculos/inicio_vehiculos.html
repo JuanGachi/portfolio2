@@ -1,0 +1,12 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Vehículos - Ofimina{% endblock %}
+
+{% block content %}
+<h1>Gestión de Vehículos</h1>
+<p>Aquí puedes gestionar los vehículos.</p>
+<ul>
+    <li><a href="{% url 'lista_vehiculos' %}">Ver Vehículos</a></li>
+    <li><a href="{% url 'agregar_vehiculo' %}">Agregar Vehículo</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Agregar Recurso{% endblock %}
+
+{% block content %}
+<h1>Agregar Recurso</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+<a href="{% url 'lista_recursos' %}">Volver a la Lista</a>
+{% endblock %}

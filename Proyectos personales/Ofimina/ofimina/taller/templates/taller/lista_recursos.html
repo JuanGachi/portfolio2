@@ -1,0 +1,13 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Lista de Recursos{% endblock %}
+
+{% block content %}
+<h1>Lista de Recursos</h1>
+<ul>
+    {% for recurso in recursos %}
+        <li>{{ recurso.nombre }} - {{ recurso.descripcion }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'agregar_recurso' %}">Agregar Recurso</a>
+{% endblock %}

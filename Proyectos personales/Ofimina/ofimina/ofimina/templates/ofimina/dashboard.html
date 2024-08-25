@@ -1,0 +1,18 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<p>Welcome, {{ user.username }}!</p>
+<ul>
+    <li><a href="{% url 'inicio_almacen' %}">Almacén</a></li>
+    <li><a href="{% url 'inicio_facturacion' %}">Facturación</a></li>
+    <li><a href="{% url 'inicio_taller' %}">Taller</a></li>
+    <li><a href="{% url 'inicio_vehiculos' %}">Vehículos</a></li>
+</ul>
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
+{% endblock %}

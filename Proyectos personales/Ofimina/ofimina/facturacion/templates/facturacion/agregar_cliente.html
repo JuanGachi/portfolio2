@@ -1,0 +1,14 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Agregar Cliente{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Agregar Cliente</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+</div>
+{% endblock %}

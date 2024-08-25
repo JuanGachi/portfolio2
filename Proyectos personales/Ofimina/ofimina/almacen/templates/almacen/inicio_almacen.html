@@ -1,0 +1,14 @@
+{% extends 'ofimina/base.html' %}
+
+{% block title %}Inicio Almacén{% endblock %}
+
+{% block content %}
+<h1>Bienvenido al Almacén</h1>
+<p>Desde aquí puedes gestionar los productos.</p>
+<ul>
+    <li><a href="{% url 'lista_productos' %}">Ver Productos</a></li>
+    <li><a href="{% url 'agregar_producto' %}">Agregar Producto</a></li>
+    <li><a href="{% url 'agregar_entrada_stock' %}">Agregar Entrada de Stock</a></li>
+    <li><a href="{% url 'agregar_salida_stock' %}">Agregar Salida de Stock</a></li>
+</ul>
+{% endblock %}
